@@ -77,7 +77,7 @@ SELECT 'Seeding albums' AS Seeder;
 
 -- create books database (if it doesn't exit)
 
-CREATE DATABASE IF NOT EXISTS books_db;
+#CREATE DATABASE IF NOT EXISTS books_db;
 
 -- create books migration (table)
 -- The table books should have the following columns...
@@ -88,7 +88,7 @@ CREATE DATABASE IF NOT EXISTS books_db;
 -- description
 -- bestseller_weeks
 
-USE books_db;
+USE codeup_test_db;
 
 DROP TABLE IF EXISTS books;
 
