@@ -19,8 +19,8 @@ ORDER BY last_name ASC;
 SELECT last_name FROM employees
 WHERE last_name LIKE '%q%'
   AND last_name NOT LIKE '%qu%'
-GROUP BY last_name
-ORDER BY last_name ASC;
+GROUP BY last_name;
+
 
 #6 Add a COUNT() to your results and use ORDER BY to make it easier to find employees whose unusual name is shared with others.
 SELECT COUNT(*) AS 'Count', last_name FROM employees
